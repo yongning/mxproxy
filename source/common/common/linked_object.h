@@ -21,4 +21,9 @@ public:
         dst.splice(dst.begin(), src, entry_);
     }
 
-        
+protected:
+    LinkedObject() = default;
+
+private:
+    template<typename U, typename V>
+    friend void LinkedList::moveIntoList        
